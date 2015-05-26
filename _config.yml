@@ -9,11 +9,11 @@ permalink:	/blog/:title
 title:		Thinny
 tagline:	'blog'
 description:	'My personal blog.'
-url:		http://camporez.com
+url:		http://exilecelestia.me
 
 author:
-  name:		'Ian Camporez Brunelli'
-  url:		https://google.com/+IanCamporezBrunelli
+  name:		'Devan Huapaya'
+  url:		devan.im
 
 paginate:	5
 

@@ -2,21 +2,21 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
  <title>Thinny</title>
- <link href="http://camporez.com/atom.xml" rel="self"/>
- <link href="http://camporez.com/"/>
- <updated>2015-05-26T13:52:20-05:00</updated>
- <id>http://camporez.com</id>
+ <link href="http://exilecelestia.me/atom.xml" rel="self"/>
+ <link href="http://exilecelestia.me/"/>
+ <updated>2015-05-26T14:10:30-05:00</updated>
+ <id>http://exilecelestia.me</id>
  <author>
-   <name>Ian Camporez Brunelli</name>
+   <name>Devan Huapaya</name>
    <email></email>
  </author>
 
  
  <entry>
    <title>Hello, Cosette</title>
-   <link href="http://camporez.com/blog/hello-cosette"/>
+   <link href="http://exilecelestia.me/blog/hello-cosette"/>
    <updated>2014-02-26T00:00:00-06:00</updated>
-   <id>http://camporez.com/blog/hello-cosette</id>
+   <id>http://exilecelestia.me/blog/hello-cosette</id>
    <content type="html">&lt;h1&gt;Thinny 2.1, codename &amp;quot;&lt;a href=&quot;http://lesmiserables.wikia.com/wiki/Cosette&quot;&gt;Cosette&lt;/a&gt;&amp;quot;&lt;/h1&gt;
 
 &lt;p&gt;Cosette is the main character of the french novel &lt;em&gt;Les Misérables&lt;/em&gt;, published in 1862 by &lt;em&gt;Victor Hugo&lt;/em&gt;.&lt;/p&gt;
@@ -126,9 +126,9 @@
  
  <entry>
    <title>Thinny 2: a Jekyll theme</title>
-   <link href="http://camporez.com/blog/thinny-2"/>
+   <link href="http://exilecelestia.me/blog/thinny-2"/>
    <updated>2014-01-22T00:00:00-06:00</updated>
-   <id>http://camporez.com/blog/thinny-2</id>
+   <id>http://exilecelestia.me/blog/thinny-2</id>
    <content type="html">&lt;p&gt;Three months ago, I released an (unfinished) theme for Ghost 0.3: &lt;a href=&quot;http://github.com/camporez/Thinny&quot;&gt;Thinny 0.3&lt;/a&gt;, codename &amp;quot;&lt;a href=&quot;http://nikita2010.wikia.com/wiki/Alexandra_Udinov&quot;&gt;Alexandra&lt;/a&gt;&amp;quot;.
 But now I&amp;#39;m migrating my blog to Jekyll, and also migrating the theme. With a brand new look, Thinny 2 also brings a lot of new features and polishment. Actually, it was completely remaked.&lt;/p&gt;
 
