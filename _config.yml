@@ -3,12 +3,12 @@ markdown:	redcarpet
 pygments:	true
 
 # Permalinks
-permalink:	/blog/:title
+permalink:	/comic/:title
 
 # Setup
-title:		Thinny
-tagline:	'blog'
-description:	'My personal blog.'
+title:		Exile Celestia
+tagline:	'comic'
+description:	'Exile Celestia: a comic by Nick Rodgers and Bryan May.'
 baseurl: ''
 url:		http://exilecelestia.me
 
@@ -24,15 +24,11 @@ cover:		/assets/images/cover.jpg
 
 social:
   - icon:	twitter
-    url:	https://twitter.com/iancamporez
+    url:	https://twitter.com/devanIpsum
     desc:	Follow me on twitter
 
-  - icon:	github
-    url:	https://github.com/camporez
-    desc:	Fork me on github
-
   - icon:	googleplus-alt
-    url:	https://google.com/+IanCamporezBrunelli
+    url:	https://google.com/+DevanHuapaya
     desc:	Add me on google+
 
   - icon:	feed
