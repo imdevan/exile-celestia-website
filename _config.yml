@@ -9,6 +9,7 @@ permalink:	/blog/:title
 title:		Thinny
 tagline:	'blog'
 description:	'My personal blog.'
+baseurl: /exile-celestia-website
 url:		http://exilecelestia.me
 
 author:
