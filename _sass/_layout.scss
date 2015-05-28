@@ -71,12 +71,18 @@
   background-color: $footer-color;
 }
 
-.site-footer, .wrap:after {
-  height: $footer-height; 
-}
+
 .site-footer {
   background: $footer-color;
+  clear: both;
+  display: table;
+  width: 100%;
+  margin-top: 6em;
 }
+
+  .site-footer li {
+    list-style-type: none;
+    }
 
 // Styling for mobile devices
 @media screen and (max-width: 768px) {

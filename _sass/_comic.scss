@@ -6,12 +6,14 @@
 .comic-page {
   // borderline: solid $comic-border-color $comic-border-width;
   box-shadow: 0 0 40px rgba(0,0,0,0.5);
-  margin-bottom: 25px;
+  margin: 2em auto 5em;
 }
 
 .comic-nav {
   background-color: $comic-nav-background;
   line-height: $comic-nav-height;
+  display: table;
+  width: 100%;
   
     a {
       color: $comic-nav-color;

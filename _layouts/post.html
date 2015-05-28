@@ -3,14 +3,12 @@ layout: default
 ---
 <div class="row">
 
-  <div>
 
-
-	  <article class="columns small-12 large-offset-1 large-10 comic-page">
-
+	<article class="columns small-12 large-offset-1 large-10 comic-page">
 		{{ content }}
-	
-		<div class="row">	
+    </article>
+
+	<div class="row">	
 		      <nav class="comic-nav">
 				{% if site.posts.last.url == page.url %}
 				  <nav class="first-archive">
@@ -47,8 +45,6 @@ layout: default
 			  {% endif %}	
 			{% endif %}	
 	      </nav>
-      </div>
-    </article>
   </div>
 
 </div>

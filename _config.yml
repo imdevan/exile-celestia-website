@@ -30,7 +30,8 @@ permalink: /:categories/:title/
 ####CUSTOM
 
 # Set default header image
-header: yes
+header: no
+header_image: "images/cover.jpg"
 header_sm: images/banner-small.jpg
 header_med: images/banner-med.jpg
 header_large: images/banner-large.jpg
