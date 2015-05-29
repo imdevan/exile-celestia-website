@@ -18,18 +18,16 @@ sidebar: true
   <nav class="comic-nav">
 	<nav class="previous-comic">
 	  {% for post in site.posts limit:1 offset:1 %}
-	    <a href="{{ site.baseurl }}{{ post.url }}" class="icon-arrow-left hide-for-small">Previous</a>
-	    <a href="{{ site.baseurl }}{{ post.url }}" class="icon-play3 hide-for-large"></a>
+	    <a href="{{ site.baseurl }}{{ post.url }}" class="icon-backward-triangle"><!-- Previous --></a>
 	  {% endfor %}
 	</nav>
 	<nav class="first-comic">
-	  <a href="{{ site.baseurl }}{{ site.posts.last.url }}">First</a>
+	  <a href="{{ site.baseurl }}{{ site.posts.last.url }}" class="icon-circle"><!-- First --></a>
 	</nav>    
 	<nav class="comic-next">
-	  <a href="{{ site.baseurl }}/{{ post.categories }}/" class="hide-for-small">Archive<span class="icon-play"></span></a>
-	  <a href="{{ site.baseurl }}/{{ post.categories }}/" class="hide-for-large"><span class="icon-play"></span></a>
+	  <a href="{{ site.url }}{{ site.archurl }}" class="icon-square"><!-- Archive --></a>
 	</nav>
-      </nav>
+  </nav>
 
 
 </div>

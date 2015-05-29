@@ -17,11 +17,17 @@
     .hide-for-large {
       display:none 
     }
+  .hide-for-small {
+    display: inline-block;
+  }
 }
 
 @media screen and (max-width: 768px) {
   .hide-for-small {
     display: none;
+  }
+  .hide-for-large {
+    display: inline-block;
   }
 }
 

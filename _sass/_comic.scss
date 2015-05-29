@@ -10,16 +10,24 @@
 }
 
 .comic-nav {
-  background-color: $comic-nav-background;
-  line-height: $comic-nav-height;
+  // background-color: $comic-nav-background;
+  // line-height: $comic-nav-height;
   display: table;
   width: 100%;
   
     a {
-      color: $comic-nav-color;
-      font-size: 1em;
-      line-height: 30px;
+      color: #333;
+      background: cadetblue;
+      border-radius: 50%;
+      font-size: 2.5em;
+      line-height: 2.5em;
       text-transform: uppercase;
+
+      
+      display: inline-block;
+      height: 2.5em;
+      width: 2.5em;
+      text-align: center;
     }
     
     a:hover {
@@ -92,6 +100,17 @@
   .first-next {
     width: 10%;
     font-size: 2em;
+  }
+
+.comic-nav a {
+      font-size: 1em;
+      line-height: 2em;
+      height: 2em;
+      width: 2em;
+  }
+  .comic-page {
+    borderline: solid $comic-border-color $comic-border-width;
+    box-shadow: none;
   }
 }
 
