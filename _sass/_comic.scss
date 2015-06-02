@@ -22,12 +22,23 @@
       font-size: 2.5em;
       line-height: 2.5em;
       text-transform: uppercase;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 
       
       display: inline-block;
       height: 2.5em;
       width: 2.5em;
       text-align: center;
+
+      // To fade color on hover
+      transition: color 0.2s ease-in 0s, border-top-color 0.2s ease-in 0s;
+
+      // For fade in animations
+      opacity: 0;
+      -webkit-animation-duration: 1s;
+      animation-duration: 1s;
+      -webkit-animation-fill-mode: both;
+      animation-fill-mode: both;
     }
     
     a:hover {
@@ -40,6 +51,39 @@
       font-size: 1em;
     }
    
+}
+
+@-webkit-keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
 }
 
 .previous-comic {
@@ -107,6 +151,7 @@
       line-height: 2em;
       height: 2em;
       width: 2em;
+      box-shadow: none;
   }
   .comic-page {
     borderline: solid $comic-border-color $comic-border-width;
