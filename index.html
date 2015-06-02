@@ -31,3 +31,33 @@ sidebar: true
 
 
 </div>
+
+<script>
+	// Grab as much info as possible 
+	// outside the scroll handler for performace reasons.
+	var c_nav             = document.querySelectorAll('.comic-nav > nav > a'),
+	    c_nav_height      = c_nav[0].offsetTop + parseInt(getComputedStyle(c_nav[0]).height),	
+	    fup          = 'fadeInUp';
+
+	function fadeInCNav(){
+	  	
+	  	setTimeout(c_nav[0].classList.add(fup),0);
+	  	setTimeout(c_nav[1].classList.add(fup),500);
+	  	if(c_nav[2])
+	  		setTimeout(c_nav[2].classList.add(fup),1000);
+	}
+
+	if( window.pageYOffset + window.innerHeight > (c_nav_height)) {
+		fadeInCNav();
+	}
+
+	function stickyScroll(e) {
+	  if( window.pageYOffset + window.innerHeight > (c_nav_height)) {
+	  	fadeInCNav();
+	  }
+	}
+
+// Scroll handler to toggle classes.
+window.addEventListener('scroll', stickyScroll, false);
+
+</script>

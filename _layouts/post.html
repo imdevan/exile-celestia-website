@@ -12,30 +12,30 @@ layout: default
 		      <nav class="comic-nav">
 				{% if site.posts.last.url == page.url %}
 				  <nav class="first-archive">
-			      	<a href="{{ site.url }}{{ page.categories }}" class="icon-square"><!-- Archive --></a>
+			      	<a href="{{ site.url }}{{ page.categories }}" class="small-4 large-4 columns icon-square"><!-- Archive --></a>
 				  </nav>
 				  <nav class="first-next">
-			      	<a href="{{ site.baseurl }}{{page.next.url}}" class="icon-forward-triangle"><!-- Next --></a>
+			      	<a href="{{ site.baseurl }}{{page.next.url}}" class="small-4 large-4 columns icon-forward-triangle"><!-- Next --></a>
 				  </nav>
 
 				{% elsif site.posts.last.url != page.url %}
 				  {% if page.previous.url %}      
 				    <nav class="previous-comic">
-				      <a href="{{ site.baseurl }}{{ page.previous.url }}" class="icon-backward-triangle"><!-- Previous --></a>
+				      <a href="{{ site.baseurl }}{{ page.previous.url }}" class="small-4 large-4 columns icon-backward-triangle"><!-- Previous --></a>
 				    </nav>
 				{% endif %}	
 
 			  <nav class="first-comic">
-			    <a href="{{ site.baseurl }}{{ site.posts.last.url }}" class="icon-circle"><!-- First --></a>
+			    <a href="{{ site.baseurl }}{{ site.posts.last.url }}" class="small-4 large-4 columns icon-circle"><!-- First --></a>
 			  </nav>   
 
 			  {% if page.next.url %}
 			    <nav class="comic-next">
-			      <a href="{{ site.baseurl }}{{page.next.url}}" class="icon-forward-triangle"><!-- Next --></a>
+			      <a href="{{ site.baseurl }}{{page.next.url}}" class="small-4 large-4 columns icon-forward-triangle"><!-- Next --></a>
 			    </nav>
 			    {% else %}
 			    <nav class="comic-next">
-			      <a href="{{ site.url }}{{ page.categories }}" class="icon-square"><!-- Archive --></a>
+			      <a href="{{ site.url }}{{ page.categories }}" class="small-4 large-4 columns icon-square"><!-- Archive --></a>
 			    </nav>
 			  {% endif %}	
 			{% endif %}	
@@ -48,25 +48,28 @@ layout: default
 	// Grab as much info as possible 
 	// outside the scroll handler for performace reasons.
 	var c_nav             = document.querySelectorAll('.comic-nav > nav > a'),
-	    c_nav_height      = c_nav[0].offsetTop,
-	    comic              = document.querySelector('.comic-page'),
-	    comic_height       = comic.offsetTop + (getComputedStyle(comic).height.split('px')[0])*(2/3),
+	    c_nav_height      = c_nav[0].offsetTop + parseInt(getComputedStyle(c_nav[0]).height),	
 	    fup          = 'fadeInUp';
 
-
-	function stickyScroll(e) {
-
-
-	  if( window.pageYOffset > (comic_height)) {
+	function fadeInCNav(){
 	  	
 	  	setTimeout(c_nav[0].classList.add(fup),0);
 	  	setTimeout(c_nav[1].classList.add(fup),500);
 	  	if(c_nav[2])
 	  		setTimeout(c_nav[2].classList.add(fup),1000);
+	}
+
+	if( window.pageYOffset + window.innerHeight > (c_nav_height)) {
+		fadeInCNav();
+	}
+
+	function stickyScroll(e) {
+	  if( window.pageYOffset + window.innerHeight > (c_nav_height)) {
+	  	fadeInCNav();
 	  }
 	}
 
-	// Scroll handler to toggle classes.
-	window.addEventListener('scroll', stickyScroll, false);
+// Scroll handler to toggle classes.
+window.addEventListener('scroll', stickyScroll, false);
 
 </script>
