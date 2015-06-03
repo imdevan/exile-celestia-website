@@ -6,7 +6,7 @@
 .comic-page {
   // borderline: solid $comic-border-color $comic-border-width;
   box-shadow: 0 0 40px rgba(0,0,0,0.5);
-  margin: 2em auto 5em;
+  margin-bottom:5em;
 }
 
 .comic-nav {
@@ -19,7 +19,9 @@
       text-align: center;
       margin:0;
       display: inline-block;
+      // width: 33.3333
     }
+
     a {
       color: #333;
       background: cadetblue;
@@ -91,21 +93,6 @@
   animation-name: fadeInUp;
 }
 
-.previous-comic {
-  width: 30%;  margin-left: 25px;
-}
-
-.first-comic {
-  width: 30%;
-  display: inline-block;
-  text-align: center;
-}
-
-.comic-next {
-  width: 33%;
-  display: inline-block;
-  text-align: right;
-}
 
 // Archive link when on first page of comic
 .first-archive {

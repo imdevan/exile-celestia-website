@@ -64,6 +64,18 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 300;
 }
 
+h1, h2{
+    font-weight: bold;
+    font-size: 4em;
+    color: #5F9EA0;
+}
+h1{
+    text-align: center;
+    margin-bottom: 1em;
+    color: cadetblue;
+    text-decoration: underline;
+}
+
 /**
  * Links
  */
